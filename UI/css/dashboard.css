@@ -69,6 +69,12 @@ header img {
     background-color: #030303;
     color: #fff;
 }
+.nav li ul li {
+    display: none;
+}
+.nav li:hover ul li {
+    display: block;
+}
 .content {
     width: auto;
     margin-top: 50px;
