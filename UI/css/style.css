@@ -96,12 +96,6 @@ input[type=submit] {
      color: #fff;
     margin-right: 15px; 
 }
-
-/* .btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-} */
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
@@ -116,11 +110,6 @@ input[type=submit]:active {
      
 }
 
-/* .btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
-} */
 /* HEADER */
 header {
     padding: 10px 100px;
@@ -133,7 +122,9 @@ header {
 }
 header a img {
     margin-top: -2px;
+
     margin-left: -50px;
+   
     border-radius: 50%;
 }
 section {
@@ -157,7 +148,8 @@ section.bg-image {
 .welcome-text h1 {
     margin-bottom: 40px;
     font-weight: bold;
-}
+
+
 
 .main-nav {
     display: flex;
