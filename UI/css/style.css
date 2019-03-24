@@ -122,7 +122,9 @@ header {
 }
 header a img {
     margin-top: -2px;
-    margin-left: -3%;
+
+    margin-left: -50px;
+   
     border-radius: 50%;
 }
 section {
@@ -146,7 +148,9 @@ section.bg-image {
 .welcome-text h1 {
     margin-bottom: 40px;
     font-weight: bold;
-}
+
+
+
 .main-nav {
     display: flex;
     float: right;

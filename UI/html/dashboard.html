@@ -26,23 +26,25 @@
     </header>
     <!-- logout modal -->
     <div class="modal" id="modal">
-        <div class="modal__dialog">
-            <section class="modal__content">
-                <header class="modal__header">
-                    <h2 class="modal__title">
-                        Please Confirm Sign-out
-                    </h2>
-                    <a href="" class="modal__close">&times;</a>
-                </header>
-                <div class="modal__body">
-                    <div class="modal__text">
-                        <a href="./login.html"><input type="submit" value="Sign-Out"></a>
-                        <a href="./dashboard.html"><input type="submit" value="Cancel"></a>
-                    </div>
-                </div>
-            </section>
+            <div class="modal__dialog">
+                <section class="modal__content">
+                        <div class="loginbox">
+                                <h2>Sign Out</h2>
+                                <form>
+                                    <a href="./login.html" class="loginbtn">
+                                        <span class="btn-text">Sign Out</span>
+                                        <span class="btn-text">Log Out</span>
+                                    </a>
+                                    <a href="./dashboard.html" class="loginbtn">
+                                        <span class="btn-text">Cancel</span>
+                                        <span class="btn-text">Cancel</span>
+                                    </a>
+                                </form>
+                            </div>
+                </section>
+            </div>
         </div>
-    </div>
+     
     <div class="container">
         <div class="sidebar">
           <ul class="nav">
@@ -94,6 +96,10 @@
                  <div class="box-panel">
                         <table>
                                 <tr>
+                                    <th>Id: </th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
                                    <th>Acc Name: </th>
                                    <th>Nnamani Nzubechukwu .R.</th>
                                 </tr>
@@ -104,6 +110,10 @@
                                 <tr>
                                    <th>Acc Balance: </th>
                                    <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>24/03/2019</th>
                                 </tr>
                                 <tr>
                                     <th>Phone: </th>
@@ -117,6 +127,10 @@
                                     <th>Account-type: </th>
                                     <th>current</th>
                                 </tr>
+                                <tr>
+                                        <th>Account-status: </th>
+                                        <th>active</th>
+                                    </tr>
                              </table>
                  </div>
             </div>
@@ -132,8 +146,16 @@
                            <th>0004558837</th>
                         </tr>
                         <tr>
-                           <th>Acc Balance: </th>
+                           <th>Old Balance: </th>
                            <th>&#8358; 2,000,000.05</th>
+                        </tr>
+                        <tr>
+                                <th>New Balance: </th>
+                                <th>&#8358; 2,000,000.05</th>
+                             </tr>
+                        <tr>
+                            <th>Transaction Type: </th>
+                            <th>Debit</th>
                         </tr>
                         <tr>
                             <th>Phone: </th>
