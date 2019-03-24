@@ -130,7 +130,7 @@ section {
     height: 100vh;
 }
 section.bg-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./hero2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -268,7 +268,7 @@ section {
     height: 100vh;
 }
 section.bg-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./hero2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -406,7 +406,7 @@ section {
    height: 100vh;
 }
 section.bg-image {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero2.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./hero2.jpg);
    background-size: cover;
    background-position: center;
 }
@@ -544,7 +544,7 @@ section {
    height: 100vh;
 }
 section.bg-image {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero2.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./hero2.jpg);
    background-size: cover;
    background-position: center;
 }
@@ -793,7 +793,7 @@ section {
     height: 100vh;
 }
 section.bg-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./hero2.jpg);
     background-size: cover;
     background-position: center;
 }
