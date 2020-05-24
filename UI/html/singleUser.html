@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Single User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css">
+</head>
+<body>
+    <header><a href="../html/index.html"><img src="../images/main-logo.png"></a>
+        <div class="header-text">
+            <a href="../html/index.html">Crest <span>Finance</span></a>
+        </div>
+        <ul class="mobile">
+                <li><a href="#">Accounts</a>
+                  <ul class="mobile-view">
+                        <li><a href="#user-profile">All Accounts</a></li>
+                        <li><a href="#user-account">Single User</a></li>
+                        <li><a href="#transactions">Deactivate Acc</a></li>
+                        <li><a href="#history">Activate Acc</a></li>
+                        <li><a href="#history">Delete Acc</a></li>
+                        <li><a href="#user-profile">Debit Account</a></li>
+                        <li><a href="#user-account">Credit Account</a></li>
+                        <li><a href="#transactions">Transactions</a></li>
+                        <li><a href="#history">Create Admin/Staff Acc</a></li>
+                        <li><a href="#modal">Logout</a></li>
+                  </ul>
+                </li>
+        </ul>
+        </header>
+        <!-- logout modal -->
+        <div class="modal" id="modal">
+            <div class="modal__dialog">
+                <section class="modal__content">
+                        <div class="loginbox">
+                                <h2>Sign Out</h2>
+                                <form>
+                                    <a href="./admin.html" class="loginbtn">
+                                        <span class="btn-text">Sign Out</span>
+                                        <span class="btn-text">Log Out</span>
+                                    </a>
+                                    <a href="./singleUser.html" class="loginbtn">
+                                        <span class="btn-text">Cancel</span>
+                                        <span class="btn-text">Cancel</span>
+                                    </a>
+                                </form>
+                            </div>
+                </section>
+            </div>
+        </div>
+        <!-- Delete account modal -->
+        <div class="modal" id="modal-delete">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Please Confirm Delete</h2>
+                                    <form>
+                                        <a href="#modal-deleted" class="loginbtn">
+                                            <span class="btn-text">Delete</span>
+                                            <span class="btn-text">Delete Account</span>
+                                        </a>
+                                        <a href="./singleUser.html" class="loginbtn">
+                                            <span class="btn-text">Cancel</span>
+                                            <span class="btn-text">Cancel</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Deleted account modal -->
+        <div class="modal" id="modal-deleted">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Delete Successful</h2>
+                                    <form>
+                                        <a href="./admin-dashboard.html" class="loginbtn">
+                                            <span class="btn-text">Ok</span>
+                                            <span class="btn-text">Ok</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Deactivate account modal -->
+        <div class="modal" id="modal-deactivate">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Please Confirm Account Deactivation</h2>
+                                    <form>
+                                        <a href="#modal-deactivated" class="loginbtn">
+                                            <span class="btn-text">Deactivate</span>
+                                            <span class="btn-text">Deactivate Account</span>
+                                        </a>
+                                        <a href="./singleUser.html" class="loginbtn">
+                                            <span class="btn-text">Cancel</span>
+                                            <span class="btn-text">Cancel</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Deactivated account modal -->
+        <div class="modal" id="modal-deactivated">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Account Deactivated Successfully</h2>
+                                    <form>
+                                        <a href="./singleUser.html" class="loginbtn">
+                                            <span class="btn-text">Ok</span>
+                                            <span class="btn-text">Ok</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+             <!-- Activate account modal -->
+        <div class="modal" id="modal-activate">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Please Confirm Account Activation</h2>
+                                    <form>
+                                        <a href="#modal-activated" class="loginbtn">
+                                            <span class="btn-text">Activate</span>
+                                            <span class="btn-text">Activate Account</span>
+                                        </a>
+                                        <a href="./singleUser.html" class="loginbtn">
+                                            <span class="btn-text">Cancel</span>
+                                            <span class="btn-text">Cancel</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Activated account modal -->
+        <div class="modal" id="modal-activated">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                            <div class="loginbox">
+                                    <h2>Account Activated Successfully</h2>
+                                    <form>
+                                        <a href="./singleUser.html" class="loginbtn">
+                                            <span class="btn-text">Ok</span>
+                                            <span class="btn-text">Ok</span>
+                                        </a>
+                                    </form>
+                                </div>
+                    </section>
+                </div>
+            </div>
+        <!-- credit account modal -->
+        <div class="modal" id="modal-credit">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                        <div class="modal__body">
+                            <div class="modal__text">
+                                    <div class="loginbox">
+                                            <h2>Credit Account</h2>
+                                            <form>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Transaction Id</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Account Number</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Amount</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Cashier</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Transaction Type</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Account Balance</label>
+                                                </div>
+                                                <a href="./singleUser.html" class="loginbtn">
+                                                    <span class="btn-text">Credit</span>
+                                                    <span class="btn-text">Credit User</span>
+                                                </a>
+                                                <a href="./singleUser.html" class="loginbtn">
+                                                    <span class="btn-text">Cancel</span>
+                                                    <span class="btn-text">Cancel</span>
+                                                </a>
+                                            </form>
+                                        </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+             <!-- Debit account modal -->
+        <div class="modal" id="modal-debit">
+                <div class="modal__dialog">
+                    <section class="modal__content">
+                        <div class="modal__body">
+                            <div class="modal__text">
+                                    <div class="loginbox">
+                                            <h2>Debit Account</h2>
+                                            <form>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Transaction Id</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Account Number</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Amount</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Cashier</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Transaction Type</label>
+                                                </div>
+                                                <div class="inputBox">
+                                                    <input type="text" name="" required>
+                                                    <label>Account Balance</label>
+                                                </div>
+                                                <a href="./singleUser.html" class="loginbtn">
+                                                    <span class="btn-text">Debit</span>
+                                                    <span class="btn-text">Debit User</span>
+                                                </a>
+                                                <a href="./singleUser.html" class="loginbtn">
+                                                    <span class="btn-text">Cancel</span>
+                                                    <span class="btn-text">Cancel</span>
+                                                </a>
+                                            </form>
+                                        </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        <div class="container">
+            <div class="sidebar">
+              <ul class="nav">
+                  <li><a href="./singleUser.html">Single User</a></li>
+                  <li><a href="#modal-debit">Debit Account</a></li>
+                  <li><a href="#modal-credit">Credit Account</a></li>
+                  <li><a href="#transactions">Transactions</a></li>
+                  <li><a href="#modal" class="modal__trigger">Logout</a></li>
+              </ul>
+            </div>
+        </div>
+            <div class="content">
+                <h1>welcome Admin</h1>
+                <p>Single User View</p>
+                    <div class="user-button">
+                        <button><a href="">Account</a></button>
+                        <button><a href="#modal-activate">Activate Account</a></button>
+                        <button><a href="#modal-deactivate">Deactivate Account</a></button>
+                        <button><a href="#modal-delete">Delete Account</a></button>
+                        <button><a href="#modal-debit">Debit Account</a></button>
+                        <button><a href="#modal-credit">Credit Account</a></button>
+                        <button><a href="#transactions">Transaction History</a></button>
+                    </div>
+                <div class="box" id="user-account">
+                    <div class="box-top">Account</div>
+                     <div class="box-panel">
+                            <table>
+                                <tr>
+                                    <th>Id: </th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Acc Number: </th>
+                                    <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>24/3/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>Owner: </th>
+                                    <th>Nnamani Nzubechukwu .R.</th>
+                                </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                                <tr>
+                                    <th>Status: </th>
+                                    <th>active</th>
+                                </tr>
+                                <tr>
+                                    <th>Acc Balance: </th>
+                                    <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>08139228639</th>
+                                </tr>
+                                <tr>
+                                    <th>Email: </th>
+                                    <th>nzubennamani@gmail.com</th>
+                                </tr>
+                                <tr>
+                                    <th>Address: </th>
+                                    <th>Lagos</th>
+                                </tr>
+                            </table>
+                      </div>
+                    </div>
+                
+                <div class="box" id="transactions">
+                        <div class="box-top">Transactions</div>
+                         <div class="box-panel"> <table>
+                                <tr>
+                                   <th>Id: </th>
+                                   <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>23/4/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>type: </th>
+                                    <th>Credit</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Number: </th>
+                                   <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                    <th>Cashier: </th>
+                                    <th>Charles</th>
+                                </tr>
+                                <tr>
+                                    <th>Amount: </th>
+                                    <th>&#8358; 1,000,000</th>
+                                </tr>
+                                <tr>
+                                   <th>Old Balance: </th>
+                                   <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>New Balance: </th>
+                                    <th>&#8358; 3,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>0813922839</th>
+                                </tr>
+                                <tr>
+                                    <th>Address: </th>
+                                    <th>Lagos</th>
+                                </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="box-panel"> <table>
+                                <tr>
+                                   <th>Id: </th>
+                                   <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>23/4/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>type: </th>
+                                    <th>Credit</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Number: </th>
+                                   <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                    <th>Cashier: </th>
+                                    <th>Charles</th>
+                                </tr>
+                                <tr>
+                                    <th>Amount: </th>
+                                    <th>&#8358; 1,000,000</th>
+                                </tr>
+                                <tr>
+                                   <th>Old Balance: </th>
+                                   <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>New Balance: </th>
+                                    <th>&#8358; 3,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>0813922839</th>
+                                </tr>
+                                <tr>
+                                    <th>Address: </th>
+                                    <th>Lagos</th>
+                                </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="box-panel"> <table>
+                                <tr>
+                                   <th>Id: </th>
+                                   <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>23/4/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>type: </th>
+                                    <th>Credit</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Number: </th>
+                                   <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                    <th>Cashier: </th>
+                                    <th>Charles</th>
+                                </tr>
+                                <tr>
+                                    <th>Amount: </th>
+                                    <th>&#8358; 1,000,000</th>
+                                </tr>
+                                <tr>
+                                   <th>Old Balance: </th>
+                                   <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>New Balance: </th>
+                                    <th>&#8358; 3,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>0813922839</th>
+                                </tr>
+                                <tr>
+                                    <th>Address: </th>
+                                    <th>Lagos</th>
+                                </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                            </table>
+                        </div>
+                   
+                   </div>
+                 </div>
+</body>
+<footer>
+    <div class="footer">
+    <p>Copyright &copy; Nzubechukwu. All rights reserved</p>
+</div>
+</footer>
+</html>

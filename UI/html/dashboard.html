@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css">
+</head>
+<body>
+    <header><a href="../html/index.html"><img src="../images/main-logo.png"></a>
+    <div class="header-text">
+        <a href="../html/index.html">Crest <span>Finance</span></a>
+    </div>
+    <ul class="mobile">
+            <li><a class="selected" href="#">Dashboard</a>
+              <ul class="mobile-view">
+                    <li><a href="#user-profile">Profile</a></li>
+                    <li><a href="#user-account">Account</a></li>
+                    <li><a href="#transactions">Transactions</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#modal">Logout</a></li>
+              </ul>
+            </li>
+    </ul>
+    </header>
+    <!-- logout modal -->
+    <div class="modal" id="modal">
+            <div class="modal__dialog">
+                <section class="modal__content">
+                        <div class="loginbox">
+                                <h2>Sign Out</h2>
+                                <form>
+                                    <a href="./login.html" class="loginbtn">
+                                        <span class="btn-text">Sign Out</span>
+                                        <span class="btn-text">Log Out</span>
+                                    </a>
+                                    <a href="./dashboard.html" class="loginbtn">
+                                        <span class="btn-text">Cancel</span>
+                                        <span class="btn-text">Cancel</span>
+                                    </a>
+                                </form>
+                            </div>
+                </section>
+            </div>
+        </div>
+     
+    <div class="container">
+        <div class="sidebar">
+          <ul class="nav">
+              <li><a class="selected" href="#">Dashboard</a></li>
+              <li><a href="#user-profile">Profile</a></li>
+              <li><a href="#user-account">Account</a></li>
+              <li><a href="#transactions">Transactions</a></li>
+              <li><a href="#history">History</a></li>
+              <li><a href="#modal" class="modal__trigger">Logout</a></li>
+          </ul>
+        </div>
+        <div class="content">
+            <h1>Dashboard</h1>
+            <p>welcome to ur dashboard</p>
+
+            <div class="box" id="user-profile">
+                <div class="box-top">Profile</div>
+                 <div class="box-panel">
+                        <table>
+                                <tr>
+                                   <th>Name: </th>
+                                   <th>Nnamani Nzubechukwu</th>
+                                </tr>
+                                <tr>
+                                   <th>Username: </th>
+                                   <th>Zuby</th>
+                                </tr>
+                                <tr>
+                                   <th>E-mail: </th>
+                                   <th>nzubennamani@gmail.com</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>0813922839</th>
+                                </tr>
+                                <tr>
+                                        <th>Address: </th>
+                                        <th>Lagos</th>
+                                    </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                             </table>
+                 </div>
+            </div>
+            <div class="box" id="user-account">
+                <div class="box-top">Account</div>
+                 <div class="box-panel">
+                        <table>
+                                <tr>
+                                    <th>Id: </th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Name: </th>
+                                   <th>Nnamani Nzubechukwu .R.</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Number: </th>
+                                   <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                   <th>Acc Balance: </th>
+                                   <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>24/03/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>0813922839</th>
+                                </tr>
+                                <tr>
+                                        <th>Address: </th>
+                                        <th>Lagos</th>
+                                    </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                                <tr>
+                                        <th>Account-status: </th>
+                                        <th>active</th>
+                                    </tr>
+                             </table>
+                 </div>
+            </div>
+            <div class="box" id="transactions">
+                <div class="box-top">Transactions</div>
+                 <div class="box-panel"> <table>
+                        <tr>
+                           <th>Acc Name: </th>
+                           <th>Nnamani Nzubechukwu .R.</th>
+                        </tr>
+                        <tr>
+                           <th>Acc Number: </th>
+                           <th>0004558837</th>
+                        </tr>
+                        <tr>
+                           <th>Old Balance: </th>
+                           <th>&#8358; 2,000,000.05</th>
+                        </tr>
+                        <tr>
+                                <th>New Balance: </th>
+                                <th>&#8358; 2,000,000.05</th>
+                             </tr>
+                        <tr>
+                            <th>Transaction Type: </th>
+                            <th>Debit</th>
+                        </tr>
+                        <tr>
+                            <th>Phone: </th>
+                            <th>0813922839</th>
+                        </tr>
+                        <tr>
+                                <th>Address: </th>
+                                <th>Lagos</th>
+                            </tr>
+                        <tr>
+                            <th>Account-type: </th>
+                            <th>current</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="box" id="history">
+                <div class="box-top">History</div>
+                 <div class="box-panel"><table>
+                        <tr>
+                           <th>Acc Name: </th>
+                           <th>Nnamani Nzubechukwu .R.</th>
+                        </tr>
+                        <tr>
+                           <th>Acc Number: </th>
+                           <th>0004558837</th>
+                        </tr>
+                        <tr>
+                           <th>Acc Balance: </th>
+                           <th>&#8358; 2,000,000.05</th>
+                        </tr>
+                        <tr>
+                            <th>Phone: </th>
+                            <th>0813922839</th>
+                        </tr>
+                        <tr>
+                                <th>Address: </th>
+                                <th>Lagos</th>
+                            </tr>
+                        <tr>
+                            <th>Account-type: </th>
+                            <th>current</th>
+                        </tr>
+                    </table></div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Copyright $copy Nzubechukwu. All rights reserved</p>
+</footer>
+</html>

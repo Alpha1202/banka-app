@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css">
+</head>
+<body>
+    <header><a href="../html/index.html"><img src="../images/main-logo.png"></a>
+    <div class="header-text">
+        <a href="../html/index.html">Crest <span>Finance</span></a>
+    </div>
+    <ul class="mobile">
+            <li><a href="#">Accounts</a>
+              <ul class="mobile-view">
+                    <li><a href="#user-profile">All Accounts</a></li>
+                    <li><a href="#user-account">Single User</a></li>
+                    <li><a href="#transactions">Deactivate Acc</a></li>
+                    <li><a href="#history">Activate Acc</a></li>
+                    <li><a href="#history">Delete Acc</a></li>
+                    <li><a href="#user-profile">Debit Account</a></li>
+                    <li><a href="#user-account">Credit Account</a></li>
+                    <li><a href="#transactions">Transactions</a></li>
+                    <li><a href="#history">Create Admin/Staff Acc</a></li>
+                    <li><a href="#modal">Logout</a></li>
+              </ul>
+            </li>
+    </ul>
+    </header>
+    <!-- logout modal -->
+    <div class="modal" id="modal">
+            <div class="modal__dialog">
+                <section class="modal__content">
+                        <div class="loginbox">
+                                <h2>Sign Out</h2>
+                                <form>
+                                    <a href="./admin.html" class="loginbtn">
+                                        <span class="btn-text">Sign Out</span>
+                                        <span class="btn-text">Log Out</span>
+                                    </a>
+                                    <a href="./admin-dashboard.html" class="loginbtn">
+                                        <span class="btn-text">Cancel</span>
+                                        <span class="btn-text">Cancel</span>
+                                    </a>
+                                </form>
+                            </div>
+                </section>
+            </div>
+        </div>
+     
+    <div class="container">
+        <div class="sidebar">
+          <ul class="nav">
+              <li><a href="#accounts">All Accounts</a>
+                  <ul>
+                    <li><a href="./singleUser.html">Single User</a>
+                    <li><a href="./singleUser.html">Deactivate Acc</a></li>
+                    <li><a href="./singleUser.html">Activate Account</a></li>
+                    <li><a href="./singleUser.html">Delete Account</a></li>
+                    <li><a href="./singleUser.html">Debit Account</a></li>
+                    <li><a href="./singleUser.html">Credit Account</a></li>
+                </ul>
+              </li>
+              <li><a href="#modal" class="modal__trigger">Logout</a></li>
+          </ul>
+        </div>
+        <div class="content">
+            <h1>Admin Dashboard</h1>
+            <p>welcome Admin</p>
+
+            <div class="box" id="accounts">
+                    <div class="box-top">Accounts</div>
+                     <div class="box-panel">
+                            <table>
+                                <tr>
+                                    <th>Id: </th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Acc Number: </th>
+                                    <th>0004558837</th>
+                                </tr>
+                                <tr>
+                                    <th>Created On: </th>
+                                    <th>24/3/2019</th>
+                                </tr>
+                                <tr>
+                                    <th>Owner: </th>
+                                    <th>Nnamani Nzubechukwu .R.</th>
+                                </tr>
+                                <tr>
+                                    <th>Account-type: </th>
+                                    <th>current</th>
+                                </tr>
+                                <tr>
+                                    <th>Status: </th>
+                                    <th>active</th>
+                                </tr>
+                                <tr>
+                                    <th>Acc Balance: </th>
+                                    <th>&#8358; 2,000,000.05</th>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <th>08139228639</th>
+                                </tr>
+                                <tr>
+                                    <th>Email: </th>
+                                    <th>nzubennamani@gmail.com</th>
+                                </tr>
+                                <tr>
+                                    <th>Address: </th>
+                                    <th>Lagos</th>
+                                </tr>
+                            </table>
+                      </div>
+                    </div>
+                
+                    <div class="box" id="user-account">
+                            <div class="box-top"></div>
+                             <div class="box-panel">
+                                    <table>
+                                        <tr>
+                                            <th>Id: </th>
+                                            <th>1</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Acc Number: </th>
+                                            <th>0004558837</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Created On: </th>
+                                            <th>24/3/2019</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Owner: </th>
+                                            <th>Nnamani Nzubechukwu .R.</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Account-type: </th>
+                                            <th>current</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Status: </th>
+                                            <th>active</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Acc Balance: </th>
+                                            <th>&#8358; 2,000,000.05</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Phone: </th>
+                                            <th>08139228639</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Email: </th>
+                                            <th>nzubennamani@gmail.com</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Address: </th>
+                                            <th>Lagos</th>
+                                        </tr>
+                                    </table>
+                              </div>
+                            </div>
+                        
+                            <div class="box" id="user-account">
+                                    <div class="box-top"></div>
+                                     <div class="box-panel">
+                                            <table>
+                                                <tr>
+                                                    <th>Id: </th>
+                                                    <th>1</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Acc Number: </th>
+                                                    <th>0004558837</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Created On: </th>
+                                                    <th>24/3/2019</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Owner: </th>
+                                                    <th>Nnamani Nzubechukwu .R.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Account-type: </th>
+                                                    <th>current</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Status: </th>
+                                                    <th>active</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Acc Balance: </th>
+                                                    <th>&#8358; 2,000,000.05</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Phone: </th>
+                                                    <th>08139228639</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Email: </th>
+                                                    <th>nzubennamani@gmail.com</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Address: </th>
+                                                    <th>Lagos</th>
+                                                </tr>
+                                            </table>
+                                      </div>
+                                    </div>
+                                
+                                    <div class="box" id="user-account">
+                                            <div class="box-top"></div>
+                                             <div class="box-panel">
+                                                    <table>
+                                                        <tr>
+                                                            <th>Id: </th>
+                                                            <th>1</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Acc Number: </th>
+                                                            <th>0004558837</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Created On: </th>
+                                                            <th>24/3/2019</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Owner: </th>
+                                                            <th>Nnamani Nzubechukwu .R.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Account-type: </th>
+                                                            <th>current</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Status: </th>
+                                                            <th>active</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Acc Balance: </th>
+                                                            <th>&#8358; 2,000,000.05</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Phone: </th>
+                                                            <th>08139228639</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Email: </th>
+                                                            <th>nzubennamani@gmail.com</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Address: </th>
+                                                            <th>Lagos</th>
+                                                        </tr>
+                                                    </table>
+                                              </div>
+                                            </div>
+                                        
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Copyright &copy; Nzubechukwu. All rights reserved</p>
+</footer>
+</html>
